@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Câu Đố Lịch Sử</title>
+	<link rel="stylesheet" type="text/css" href="caudolichsu.css">
+</head>
+<body>
+	<div style="background-image: url(background.png);border:1px solid yellow">
+		<div class="menuBar">
+			<button>
+				<img src="menu.png">
+			</button>
+			<div>
+				<button>Login</button>
+				  <button>LogOut</button>
+			</div>
+		</div>
+		<div class="plays">
+			<center>
+				<button>
+					<a href="file:///C:/Users/tram.nguyen/Desktop/ProjectWeb/Cauhoi.html">
+						<img src="play.png">
+					</a>
+				</button>
+			</center>
+			<p style="padding: 10px;"> Are you ready? </p>
+		</div>
+		<div class="record">
+			<div>
+				<input id="nameofyour" type="text" placeholder="Bạn có muốn lưu tên ở đây ?" name="">
+				<button onclick="addRecord()">add</button>
+			</div>
+			<div id="myrecord" class="record-right"> Kỹ Lục </div>
+		</div>	
+	</div>
+	<script src="caudolichsu.js"></script>
+</body>
+</html>
