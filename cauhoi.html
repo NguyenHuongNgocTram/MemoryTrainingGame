@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Câu Hỏi </title>
+	<link rel="stylesheet" type="text/css" href="caudolichsu.css">
+</head>
+<body>
+	<p>Bạn Đã Sẵn Sàng Trả Lời câu hỏi?</p>
+	<div class="cauhoi">
+		<button onclick="cauhoilichsu()" id="nextquestion">Yes</button>
+		<div>
+			<p id="diem" style="border:1px solid yellow;width:100px;margin-right:20px;height:100px;">
+				Score
+			</p>
+			<p> Thời Gian </p>
+		</div>
+	</div>
+	<div id="kq">
+	</div>
+	<div id="container"></div>
+	<div class="record">
+		<div>
+			<input id="nameofyour" type="text" placeholder="Bạn có muốn lưu tên ở đây ?" name="">
+			<button onclick="addRecord()">add</button>
+		</div>
+		<div id="myrecord"> Kỹ Lục </div>
+	</div>	
+	<script src="caudolichsu.js"></script>
+</body>
+</html>
