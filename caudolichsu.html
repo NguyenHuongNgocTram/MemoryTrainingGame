@@ -4,35 +4,33 @@
 	<title> Câu Đố Lịch Sử</title>
 	<link rel="stylesheet" type="text/css" href="caudolichsu.css">
 </head>
-<body>
-	<div style="background-image: url(background.png);border:1px solid yellow">
-		<div class="menuBar">
-			<button>
-				<img src="menu.png">
-			</button>
-			<div>
-				<button>Login</button>
-				  <button>LogOut</button>
-			</div>
+<body style="background:#04b2d9">
+	<div class="menuBar">
+		<button style="background:#f2dc6d">
+			<img src="menu.png">
+		</button>
+		<div class="accout">
+			<button style="background:#f2dc6d">Login</button>
+			 <button style="background:#f2dc6d">LogOut</button>
 		</div>
-		<div class="plays">
-			<center>
-				<button>
-					<a href="file:///C:/Users/tram.nguyen/Desktop/ProjectWeb/Cauhoi.html">
-						<img src="play.png">
-					</a>
-				</button>
-			</center>
-			<p style="padding: 10px;"> Are you ready? </p>
-		</div>
-		<div class="record">
-			<div>
-				<input id="nameofyour" type="text" placeholder="Bạn có muốn lưu tên ở đây ?" name="">
-				<button onclick="addRecord()">add</button>
-			</div>
-			<div id="myrecord" class="record-right"> Kỹ Lục </div>
-		</div>	
 	</div>
+	<div class="plays">
+		<center>
+			<button>
+				<a href="file:///C:/Users/tram.nguyen/Desktop/ProjectWeb/Cauhoi.html">
+					<img src="play.png">
+				</a>
+			</button>
+			<h1 style="padding: 10px;color: #f2dc6d;"> Are you ready?</h1>
+		</center>
+	</div>
+	<div class="record">
+		<div class="record-left"> 
+			<input id="nameofyour" type="text" placeholder="Bạn có muốn lưu tên ở đây ?" name="">
+			<button onclick="addRecord()" style="background:#f2dc6d">add</button>
+		</div>
+		<div id="myrecord" class="record-right"> Kỹ Lục: </div>
+	</div>	
 	<script src="caudolichsu.js"></script>
 </body>
 </html>
