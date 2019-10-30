@@ -4,27 +4,39 @@
 	<title> Câu Hỏi </title>
 	<link rel="stylesheet" type="text/css" href="caudolichsu.css">
 </head>
-<body>
-	<p>Bạn Đã Sẵn Sàng Trả Lời câu hỏi?</p>
+<body style="background:#04b2d9">
+	<p style=" color: #f2f2f2; font-size: 28px">Bạn Đã Sẵn Sàng Trả Lời câu hỏi?</p>
 	<div class="cauhoi">
-		<button onclick="cauhoilichsu()" id="nextquestion">Yes</button>
+		<button onclick="cauhoilichsu()"id="nextquestion"style="height: 30px;width: 50px;background-color: #f2dc6d">
+			Yes
+		</button>
+		<div>
+			<p style=" color: #f2dc6d; font-size: 28px">Dap An Cua ban La:</p>
+			<p class="kqua" id="k1"></p>
+			<p id="manghienthi"></p>
+			<p id="hienthidung"></p>
+			<button onclick="countScore()" style="background-color:#f2dc6d">Tinh Diem </button>
+		</div>
 		<div>
 			<p id="diem" style="border:1px solid yellow;width:100px;margin-right:20px;height:100px;">
-				Score
+				Score:
+				<b id="yourScore"></b>
 			</p>
-			<p> Thời Gian </p>
+			<p style="border:1px solid yellow;width:100px;margin-right:20px;height:100px;">
+				Thời Gian
+			</p>
 		</div>
 	</div>
-	<div id="kq">
+	<div id="kq" style="color: #f2dc6d">
 	</div>
 	<div id="container"></div>
 	<div class="record">
-		<div>
+		<div class="record-left"> 
 			<input id="nameofyour" type="text" placeholder="Bạn có muốn lưu tên ở đây ?" name="">
-			<button onclick="addRecord()">add</button>
+			<button onclick="addRecord()" style="background:#f2dc6d">add</button>
 		</div>
-		<div id="myrecord"> Kỹ Lục </div>
-	</div>	
+		<div id="myrecord" class="record-right"> Kỹ Lục: </div>
+	</div>		
 	<script src="caudolichsu.js"></script>
 </body>
 </html>
