@@ -16,28 +16,50 @@
 	display: grid;
 	grid-template-columns: auto auto;
 	width: 500px;
-	align-content: center;
 }
 .plays{
-	border: 2px solid purple;
-	width: 500px;
-	margin-left: 300px;
-	margin-right: 300px;
-	padding: 10px;
+	margin-top: 200px;
 	justify-content: center;
 	align-items: center;
+	height: 500px;
 }
 .cauhoi{
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
+}
+.accout{
+
+}
+.accout button{
+	width: 50px;
+	height: 30px;
 }
 .record{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
 }
+.record-left{
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+.record-left input{
+	width: 250px;
+	height: 30px;
+}
+.record-left button{
+	margin-left: 20px;
+	width: 100px;
+	height: 30px;
+}
 .record-right{
-	border: 1px solid yellow;
+	border: 1px solid #f2f2f2;
 	width: 500px;
 	height: 300px;
+	font-size: 28px;
+	color: #f2dc6d;
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
